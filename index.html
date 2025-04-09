@@ -1089,7 +1089,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="https://formspree.io/f/xzzeyzrv" method="POST" id="contactForm">
+                    <form action="https://formspree.io/f/xzzeyzrv" method="POST">
                         <div class="form-group">
                             <label for="name" class="form-label">お名前 <span style="color: var(--error);">*</span></label>
                             <input type="text" name="name" id="name" class="form-control" required>
@@ -1195,17 +1195,6 @@
                         });
                     }
                 });
-            });
-
-            // コンタクトフォーム送信処理
-            const contactForm = document.getElementById('contactForm');
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // 実際のフォーム送信処理はここに記述
-                // 今回はデモのためアラートを表示
-                alert('お問い合わせありがとうございます。メッセージが送信されました。');
-                contactForm.reset();
             });
         });
     </script>
